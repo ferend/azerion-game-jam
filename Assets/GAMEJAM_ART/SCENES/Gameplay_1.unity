@@ -1825,7 +1825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   battleObject: {fileID: 1363293933}
   playerBar: {fileID: 937293841}
-  IncreaseAmount: 3
+  IncreaseAmount: 4
   canStart: 0
   didTutorial: 0
   fighText: {fileID: 1131223074}

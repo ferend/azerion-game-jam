@@ -134,6 +134,14 @@ PrefabInstance:
       propertyPath: m_text
       value: 02
       objectReference: {fileID: 0}
+    - target: {fileID: 861556520, guid: 977f47ec5f587490aab4252595c876ef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2014319191}
+    - target: {fileID: 861556520, guid: 977f47ec5f587490aab4252595c876ef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPauseButtonClicked
+      objectReference: {fileID: 0}
     - target: {fileID: 1001654884, guid: 977f47ec5f587490aab4252595c876ef, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2119,7 +2127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   battleObject: {fileID: 65509992}
   playerBar: {fileID: 65509991}
-  IncreaseAmount: 3
+  IncreaseAmount: 4
   canStart: 0
   didTutorial: 1
   fighText: {fileID: 65509998}

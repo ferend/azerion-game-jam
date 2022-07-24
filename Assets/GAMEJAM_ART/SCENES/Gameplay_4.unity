@@ -920,6 +920,18 @@ PrefabInstance:
       propertyPath: m_text
       value: 04
       objectReference: {fileID: 0}
+    - target: {fileID: 861556520, guid: 977f47ec5f587490aab4252595c876ef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1231560959}
+    - target: {fileID: 861556520, guid: 977f47ec5f587490aab4252595c876ef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPauseButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 861556520, guid: 977f47ec5f587490aab4252595c876ef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameFlowManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1170899714, guid: 977f47ec5f587490aab4252595c876ef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1286,7 +1298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8496932782503500332, guid: 26a1ebeba98a94ba68faf7cad8d004e0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.4
+      value: 171.7
       objectReference: {fileID: 0}
     - target: {fileID: 8496932782503500332, guid: 26a1ebeba98a94ba68faf7cad8d004e0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1921,7 +1933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   battleObject: {fileID: 580410523}
   playerBar: {fileID: 580410522}
-  IncreaseAmount: 2
+  IncreaseAmount: 4
   canStart: 0
   didTutorial: 1
   fighText: {fileID: 580410524}

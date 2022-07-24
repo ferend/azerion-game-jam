@@ -134,6 +134,14 @@ PrefabInstance:
       propertyPath: m_text
       value: 03
       objectReference: {fileID: 0}
+    - target: {fileID: 861556520, guid: 977f47ec5f587490aab4252595c876ef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 144691971}
+    - target: {fileID: 861556520, guid: 977f47ec5f587490aab4252595c876ef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPauseButtonClicked
+      objectReference: {fileID: 0}
     - target: {fileID: 1170899714, guid: 977f47ec5f587490aab4252595c876ef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -452,7 +460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   battleObject: {fileID: 105352606}
   playerBar: {fileID: 105352605}
-  IncreaseAmount: 2
+  IncreaseAmount: 4
   canStart: 0
   didTutorial: 1
   fighText: {fileID: 105352599}
@@ -2124,8 +2132,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 3}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.4314766, y: 3, z: 2.3829286}
+  m_Center: {x: 0.2842617, y: 0, z: -0.3085357}
 --- !u!65 &2106303121
 BoxCollider:
   m_ObjectHideFlags: 0

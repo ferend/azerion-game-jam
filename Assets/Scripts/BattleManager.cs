@@ -49,9 +49,9 @@ public class BattleManager : MonoBehaviour
             else
             {
                 BossFightEnd();
-                player.transform.GetChild(7).gameObject.SetActive(true);
-                player.transform.GetChild(8).gameObject.SetActive(false);
-                
+                player.transform.GetChild(5).gameObject.SetActive(true);
+                player.transform.GetChild(6).gameObject.SetActive(true);
+                GameFlowManager.Instance.ContinueGameFlow();
             }
             canStart = false;
             didTutorial = false;
@@ -81,7 +81,7 @@ public class BattleManager : MonoBehaviour
     }
     public void Increase()
     {
-        barAmount += Time.deltaTime * IncreaseAmount;
+        barAmount += Time.deltaTime * IncreaseAmount ;
     }
     
     public void ShowFightText()

@@ -36,7 +36,7 @@ public class FinalLevelController : MonoBehaviour
     {
         GameFlowManager.Instance.StopGameFlow();
         UIManager.Instance.HideAllUIElements();
-        wasWaitingText.DOFade(1, 2).OnComplete((() => wasWaitingText.DOFade(0, 3).OnComplete(GoToCutScene)));
+        wasWaitingText.DOFade(1, 3).OnComplete((() => wasWaitingText.DOFade(0, 3).OnComplete(GoToCutScene)));
     }
 
 
