@@ -53,18 +53,19 @@ public class PlayerStatusController : MonoBehaviour
     {
         return cause;
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy"))
         {
 
             health--;
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
             if(health<=0) Die(DieCause.enemy);
         }
-        if (collision.gameObject.CompareTag("Barrier"))
-        {
-            Die(DieCause.barrier);
+        if (other.gameObject.CompareTag("Barrier"))
+        {            
+            health--;
+            if(health<=0) Die(DieCause.barrier);
             print("bariyer");
         }
 
