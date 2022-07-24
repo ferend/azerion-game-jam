@@ -33,6 +33,7 @@ public class PlayerStatusController : MonoBehaviour
     {
         didDie = true;
         this.cause = cause;
+        this.gameObject.GetComponent<MeshRenderer>().enabled = false;
         Instantiate(nukeParticle, transform.position, Quaternion.identity );
         nukeParticle.transform.position = gameObject.transform.position;
         StartCoroutine(EndGamePopupWaiter());
