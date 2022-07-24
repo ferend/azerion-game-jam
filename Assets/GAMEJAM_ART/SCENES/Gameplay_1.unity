@@ -906,7 +906,7 @@ Transform:
   m_GameObject: {fileID: 1606163206}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 111.8, y: 0.63, z: -0.941}
-  m_LocalScale: {x: 1.6, y: 1.6, z: 1.6}
+  m_LocalScale: {x: 1.6, y: 1.8, z: 1.6}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -1066,7 +1066,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8496932782503500335, guid: 26a1ebeba98a94ba68faf7cad8d004e0, type: 3}
       propertyPath: forwardSpeed
-      value: 5
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8907555723137254445, guid: 26a1ebeba98a94ba68faf7cad8d004e0, type: 3}
       propertyPath: m_IsActive
@@ -1409,6 +1409,8 @@ MonoBehaviour:
   canStart: 0
   didTutorial: 0
   fighText: {fileID: 1131223074}
+  bossDeathParticle: {fileID: 6671181022599766904, guid: 8bf215f5d27fe9a40b382b5dbe1c6f61, type: 3}
+  bossGameObject: {fileID: 1606163206}
   dialogManager: {fileID: 2014319194}
 --- !u!4 &2014319193
 Transform:
@@ -1591,6 +1593,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3293806405588270422, guid: 977f47ec5f587490aab4252595c876ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7222002135377322930, guid: 977f47ec5f587490aab4252595c876ef, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

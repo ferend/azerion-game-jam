@@ -16,6 +16,8 @@ public class BattleManager : MonoBehaviour
     public bool canStart = false;
     public bool didTutorial;
     public Image fighText;
+    public ParticleSystem bossDeathParticle;
+    public GameObject bossGameObject;
     public DialogManager dialogManager;
 
     private void Start()
@@ -39,8 +41,14 @@ public class BattleManager : MonoBehaviour
         {
             didWon = true;
             if (SceneManager.GetActiveScene().buildIndex != 5)
+            { 
+               BossFightEnd();
+                StartCoroutine(ChangeScene());
+            }
+            else
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+                BossFightEnd();
+                // Musab scene logic here
             }
             canStart = false;
             didTutorial = false;
@@ -98,15 +106,23 @@ public class BattleManager : MonoBehaviour
         if (!didTutorial)
         {
             TutorialManager.Instance.battleTut.SetActive(false);
-
         }
         OpenBattle();
         dialogManager.dialogBack.SetActive(false);
-        OpenBattle();
     }
 
-    private void onImageClose()
+    private IEnumerator ChangeScene()
     {
-        canStart = true;
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+
     }
+
+    private void BossFightEnd()
+    {
+        bossGameObject.SetActive(false);
+        battleObject.SetActive(false);
+        Instantiate(bossDeathParticle, bossGameObject.transform.position, Quaternion.identity ); 
+    }
+    
 }

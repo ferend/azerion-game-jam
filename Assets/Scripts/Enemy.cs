@@ -17,7 +17,8 @@ public class Enemy : MonoBehaviour
     }
 
     private void EnemyTakeDamage()
-    {Destroy(this.gameObject);
+    {
+        Destroy(this.gameObject);
     }
 
     private void OnTriggerStay(Collider other)

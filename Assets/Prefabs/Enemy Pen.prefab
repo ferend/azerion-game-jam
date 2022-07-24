@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 10
   enemyMovementSpeed: 1
+  enemyDestroyParticle: {fileID: 0}
 --- !u!65 &604491896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -142,3 +143,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 10
   enemyMovementSpeed: 10
+  enemyDestroyParticle: {fileID: 7161664644707495018, guid: d2b3059b275f43548b6093b2619bd4f6, type: 3}

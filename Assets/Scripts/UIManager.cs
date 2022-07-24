@@ -9,9 +9,9 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     
     public static UIManager Instance;
-    public GameObject[] bossDialouge;
     public GameObject battleUI;
     public GameObject gameOverPopup;
+    public GameObject upperPanel;
     
     private void Awake() {
         if (Instance != null) {
@@ -22,23 +22,12 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void OpenBossTalkPopup(int bossNumber)
+    public void HideAllUIElements()
     {
-        print("openpoup and stop Game" + bossNumber);
-        GameFlowManager.Instance.StopGameFlow();
-        // open dialogue popup and freeze game 
-        bossDialouge[bossNumber].SetActive(true);
-        bossDialouge[bossNumber].transform.DOScale(new Vector3(1, 1, 1), 0.4F).SetEase(Ease.InOutElastic);
+        upperPanel.SetActive(false);
     }
-
-    public void CloseBossTalkPopup(int bossNumber)
-    {
-        if (bossNumber == 1)
-        {
-            bossDialouge[0].transform.DOScale(new Vector3(0, 0, 0), 0.4F).SetEase(Ease.InOutElastic).OnComplete( () => battleUI.SetActive(true) );
-        }
-    }
-
+    
+    
     public void OpenGameOverPopup()
     {
        gameOverPopup.SetActive(true);
