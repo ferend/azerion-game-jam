@@ -19,6 +19,7 @@ public class BattleManager : MonoBehaviour
     public ParticleSystem bossDeathParticle;
     public GameObject bossGameObject;
     public DialogManager dialogManager;
+    public GameObject player;
 
     private void Start()
     {
@@ -48,7 +49,9 @@ public class BattleManager : MonoBehaviour
             else
             {
                 BossFightEnd();
-                // Musab scene logic here
+                player.transform.GetChild(7).gameObject.SetActive(true);
+                player.transform.GetChild(8).gameObject.SetActive(false);
+                
             }
             canStart = false;
             didTutorial = false;

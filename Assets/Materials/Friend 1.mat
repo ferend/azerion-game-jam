@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Friend
+  m_Name: Friend 1
   m_Shader: {fileID: 4800000, guid: 650dd9526735d5b46b79224bc6e94025, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -35,9 +35,9 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 8aa1de4db2c2445e09d2071c7487f4a1, type: 3}
-        m_Scale: {x: 1.09, y: 0.96}
-        m_Offset: {x: 0, y: -0.51}
+        m_Texture: {fileID: 2800000, guid: 43e2118f232344a0e950f3892b7ccdcc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -59,9 +59,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 8aa1de4db2c2445e09d2071c7487f4a1, type: 3}
-        m_Scale: {x: 1.09, y: 0.96}
-        m_Offset: {x: 0, y: -0.51}
+        m_Texture: {fileID: 2800000, guid: 43e2118f232344a0e950f3892b7ccdcc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}

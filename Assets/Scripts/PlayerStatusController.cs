@@ -10,6 +10,7 @@ public class PlayerStatusController : MonoBehaviour
     private DieCause cause;
     private bool didDie;
     public ParticleSystem nukeParticle;
+    public GameObject[] playerHealths;
 
     public static PlayerStatusController Instance;
     private void Awake()
@@ -27,6 +28,18 @@ public class PlayerStatusController : MonoBehaviour
 
     private void Update()
     {
+        switch (health)
+        {
+            case 2:
+                playerHealths[0].SetActive(false);
+                break;
+            case 1:
+                playerHealths[1].SetActive(false);
+                break;
+            case 0:
+                playerHealths[2].SetActive(false);
+                break;
+        }
     }
 
     public void Die(DieCause cause)
@@ -34,6 +47,12 @@ public class PlayerStatusController : MonoBehaviour
         didDie = true;
         this.cause = cause;
         this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+        
+            for (int i = 3; i < 7; i++)
+            {
+                transform.parent.gameObject.transform.GetChild(i).GetComponent<MeshRenderer>().enabled = false;
+            }
+            
         Instantiate(nukeParticle, transform.position, Quaternion.identity );
         nukeParticle.transform.position = gameObject.transform.position;
         StartCoroutine(EndGamePopupWaiter());
@@ -58,8 +77,8 @@ public class PlayerStatusController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-
             health--;
+       
             Destroy(other.gameObject);
             if(health<=0) Die(DieCause.enemy);
         }
