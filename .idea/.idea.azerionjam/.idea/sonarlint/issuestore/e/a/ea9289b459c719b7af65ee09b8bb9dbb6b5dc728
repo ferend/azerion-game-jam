@@ -1,0 +1,8 @@
+
+wcsharpsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(’èËá8ŸÊ›¢0
+Gcsharpsquid:S29337"Make 'NSA_iPhoneX' 'readonly'.(õù³½úÿÿÿÿ8ŸÊ›¢0
+Fcsharpsquid:S2933E""Make 'NSA_iPhoneXsMax' 'readonly'.(€§é8ŸÊ›¢0
+Lcsharpsquid:S2933S"#Make 'NSA_Pixel3XL_LSL' 'readonly'.(¦ÇĞ°ÿÿÿÿÿ8 Ê›¢0
+Lcsharpsquid:S2933\"#Make 'NSA_Pixel3XL_LSR' 'readonly'.(¬¨›ıÿÿÿÿ8 Ê›¢0
+gcsharpsquid:S1104-"DMake this field 'private' and encapsulate it in a 'public' property.(¦òå8 Ê›¢0
+ccsharpsquid:S2223-"@Change the visibility of 'Sim' or make it 'const' or 'readonly'.(¦òå8 Ê›¢0
